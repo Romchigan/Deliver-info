@@ -1,0 +1,30 @@
+.widget-title {
+  color: #666262;
+  font: 600 18px/18px Novecentowide;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.wrap-sidebar {
+  padding-left: 30px;
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #9b9999;
+    font: 400 16px/24px Helvetica Neue;
+  }
+}
+
+.widget_recent_entries {
+  ul li {
+    &:last-child {
+      border-bottom: none;
+    }
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,168 @@
+.home-banner-img {
+  width: 100%;
+  display: block;
+  min-height: 400px;
+
+}
+
+.home-carousel-indicators .carousel-indicators .active {
+  background-color: $white;
+  border-color: $white;
+  margin: 1px;
+  max-width: 14px;
+  height: 14px;
+  @include border-radius(10px);
+}
+
+.home-carousel-indicators .carousel-indicators li {
+  background-color: $white;
+  border-color:$white;
+  max-width: 8px;
+  height: 8px;
+  margin-top: 5px;
+  @include border-radius(10px);
+}
+
+.home-carousel-indicators .carousel-indicators {
+  position: absolute;
+  top: -60px;
+  z-index: 15;
+  list-style: none;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home-sup-heading-site {
+  font: 400 22px/18px Helvetica Neue;
+  margin-bottom: 25px;
+}
+
+.home-heading-site {
+  font: 600 36px/24px Novecentowide;
+  text-transform: uppercase;
+  padding: 15px 0 20px;
+  margin-bottom: 30px;
+  a {
+    text-decoration: none;
+    color: $green;
+  }
+}
+
+.wrap-heading-site {
+  margin: 0 auto;
+}
+
+/* Carousel */
+.carousel-caption {
+  bottom: 25%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 12%;
+  opacity: 1;
+  &:hover {
+    .fa-chevron-left, .fa-chevron-right {
+      opacity: 1;
+      &::after {
+        opacity:1;
+      }
+    }
+
+  }
+}
+
+.fa-chevron-left, .fa-chevron-right  {
+  position: relative;
+  font-size: 40px;
+  color: $black;
+  &::after{
+    position: absolute;
+    content: "";
+    top: -15px;
+    left: -15px;
+    width: 64px;
+    height: 64px;
+    background-color: $white;
+    opacity: 0.2;
+    @include border-radius(100px);
+  }
+  &::before {
+    position: absolute;
+    left: 5px;
+    z-index: 5;
+  }
+}
+
+.fa-chevron-right, .fa-chevron-left {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+/* Content */
+.home {
+  &-intro-section {
+    .container {
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 60px;
+    }
+  }
+  &-purchase-section {
+    margin: 150px 0 60px;
+    .container {
+      padding-top: 60px;
+      border-top: 1px solid #ccc;
+    }
+  }
+  &-service {
+    &-section {
+      padding: 60px 0;
+    }
+    &-list {
+      list-style-type: none;
+      li {
+        width: 27%;
+      }
+      a {
+        text-decoration: none;
+        color: $green;
+        font: 400 16px/24px Helvetica Neue;
+      }
+    }
+    &-heading {
+      color: #666262;
+      font: 600 18px/22px Novecentowide;
+      margin: 25px 0 20px 0;
+    }
+    &-info {
+      font: 400 16px/24px Helvetica Neue;
+      color: #9b9999;
+    }
+  }
+  &-portfolio {
+    &-section {
+      background-color: #efefef;
+      padding: 60px 0 20px;
+    }
+    &-list {
+      list-style-type: none;
+      width: 100%;
+      position: relative;
+      bottom: -50px;
+      li {
+        width: 30%;
+        position: relative;
+      }
+    }
+    &-img-screen {
+      position: absolute;
+      left: 45px;
+      top: 13px;
+      height: 150px;
+    }
+  }
+}
+
+.margin-home-sections {
+  margin: 60px 0;
+}

@@ -1,0 +1,139 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: rgba(0, 0, 0, .8);
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	&:hover {
+		border: none;
+	}
+
+	&:active,
+	&:focus {
+		border: none;
+		outline: none;
+	}
+}
+
+.btn {
+	border: none;
+	outline: none;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		border: none;
+	}
+	&-portfolio {
+		border: 2px solid $white;
+		font: 600 14px/18px Novecentowide;
+		background-color: rgba(255, 255, 255, 0);
+		padding: 10px 17px;
+		@include border-radius(0px);
+		&:focus{
+			border: 2px solid $white;
+		}
+		&:hover {
+			border: 2px solid $white;
+		}
+	}
+	&-footer-mail {
+		background-color: #828282;
+		color: #fefefe;
+		font: 600 14px/24px Novecentowide;
+		@include border-radius(0px);
+	}
+	&-purchase {
+		background-color: $green;
+		color: $white;
+		font: 600 14px/18px Novecentowide;
+		@include border-radius(0px);
+		padding: 11px 20px;
+		&-margin {
+			margin-top: 25px;
+		}
+	}
+}
+
+/* Social icons */
+.social-icons {
+	width: 34px;
+	height: 34px;
+	opacity: .7;
+	font-size: 18px;
+	@include border-radius(100px);
+	margin-left: 4px;
+	&-list {
+		list-style-type: none;
+		li {
+			display: inline-block;
+			position: relative;
+		}
+		a{
+			text-decoration: none;
+			&:hover, :visited {
+				color: #666262;
+			}
+		}
+	}
+	&:hover {
+		cursor: pointer;
+		background-color:  #fefefe;
+		opacity: 1;
+	}
+}
+.wrap-header {
+	&-page {
+		.social-icons {
+			background-color: #d4d4d4;
+			color: $white;
+			&-list {
+				a{
+					&:hover, :visited {
+						color: #666262;
+					}
+				}
+			}
+		}
+	}
+	&-home {
+		.social-icons {
+			background-color: #fefefe;
+			color: #666262;
+			&-list {
+				a{
+					&:hover, :visited {
+						color: #666262;
+					}
+				}
+			}
+			&:hover {
+				background-color:  #fefefe;
+			}
+		}
+	}
+}
+
+.wrap-soical-footer {
+	margin-top: 25px;
+	.social-icons {
+		background-color: #fefefe;
+		color: #666262;
+		&-list {
+			a{
+				&:hover, :visited {
+					color: #666262;
+				}
+			}
+		}
+		&:hover {
+			background-color:  #fefefe;
+		}
+	}
+}

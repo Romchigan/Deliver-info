@@ -1,0 +1,219 @@
+.wrap-header {
+  width: 100%;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  padding-bottom: 40px;
+  @media only screen and (max-width: 479px) and (min-width: 320px){
+    top: 0;
+    padding-left: 15px;
+  }
+  &-home {
+    position: absolute;
+    top: 70px;
+  }
+  &-page {
+    position: relative;
+    top: 40px;
+  }
+}
+
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+  .navbar-nav li:first-child {
+    margin-left: 40px;
+  }
+  .navbar-toggleable-md .navbar-nav {
+    margin: 0;
+  }
+}
+
+.nav {
+  padding-top: 10px;
+  @media only screen and (max-width: 479px) and (min-width: 320px) {
+    padding-top: 0;
+  }
+}
+
+.wrap-header-home {
+  .navbar-light .navbar-nav a {
+    color: rgba(255, 255, 255, 1);
+    font: 600 18px/18px Novecentowide;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      color: $green;
+    }
+    &:focus {
+      color: $green;
+    }
+    @media only screen and (max-width: 479px) and (min-width: 320px) {
+      font: 600 12px/18px OpenSans, sans-serif;
+    }
+  }
+}
+
+.wrap-header-page {
+  .navbar-light .navbar-nav a {
+    color: #666262;
+    font: 600 18px/18px Novecentowide;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: $green;
+    }
+    &:focus {
+      color: $green;
+    }
+    @media only screen and (max-width: 479px) and (min-width: 320px) {
+      font: 600 12px/18px OpenSans, sans-serif;
+    }
+  }
+}
+
+.navbar-nav li+li {
+  margin-left: 35px;
+}
+
+.navbar-light .navbar-nav .active>a{
+  color: $green;
+  font-weight: 600;
+  &:hover {
+    color: $green;
+    font-weight: 600;
+  }
+  &:focus {
+    color: $green;
+    font-weight: 600;
+  }
+}
+
+.navbar-nav {
+  margin-top: 30px;
+  float: right;
+  @media only screen and (max-width: 479px) and (min-width: 320px) {
+    padding-right: 20px;
+    padding-top: 65px;
+  }
+}
+
+.navbar-nav li{
+  display: inline-block;
+}
+
+.wrap-header {
+  &-page {
+    .header-info {
+      border-bottom: 1px solid #ccc;
+      .navbar-brand {
+        color: #666262;
+      }
+    }
+  }
+  &-home {
+    .header-info {
+      border-bottom: 1px solid $white;
+    }
+  }
+}
+
+.header-info {
+  width: 100%;
+  padding-bottom: 30px;
+  .navbar-brand {
+    font: 400 40px/18px Pacifico;
+  }
+  &-wrap {
+   width: 100%;
+ }
+}
+
+/* Header search */
+.header-search {background: transparent;}
+.header-search form {
+  height: 42px;
+  position: relative;
+}
+.header-search input {
+  height: 100%;
+  width: 0;
+  padding: 0 42px 0 5px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 12px;
+  right: 0;
+  z-index: 2;
+}
+.header-search input:focus {
+  width: 190px;
+  z-index: 1;
+}
+.header-search button {
+  background: transparent;
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 12px;
+  right: -10px;
+  cursor: pointer;
+}
+.header-search button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 18px;
+}
+
+.wrap-header {
+  &-page {
+    .header-search input {
+      color:#666262;
+      &::-webkit-input-placeholder {
+        color: #666262;
+      }
+      &:-moz-placeholder {
+        color: #666262;
+      }
+    }
+    .header-search input:focus {
+      border-bottom: 2px solid #666262;
+    }
+    .header-search button:before {
+      color: #666262;
+    }
+  }
+}
+
+.wrap-header {
+  &-home {
+    .header-search input {
+      color: $white;
+      &::-webkit-input-placeholder {
+        color: $white;
+      }
+      &:-moz-placeholder {
+        color: $white;;
+      }
+    }
+    .header-search input:focus {
+      border-bottom: 2px solid #F9F0DA;
+    }
+    .header-search button:before {
+      color: $white;
+    }
+  }
+}
+
+.title-page {
+  background: url('./img/img.png') no-repeat center center;
+  padding: 42px 0 32px 0;
+  margin-top: 20px;
+  background-size: cover;
+  &-heading {
+    color: #fefefe;
+    font: 600 36px/18px Novecentowide;
+  }
+}

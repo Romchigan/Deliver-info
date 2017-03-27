@@ -1,0 +1,64 @@
+.about {
+  &-intro-section {
+    padding: 60px 0 0;
+    .container {
+      padding-bottom: 60px;
+      border-bottom: 1px solid #c2c2c2;
+    }
+  }
+  &-us {
+    &-section {
+      padding: 60px 0 0;
+    }
+    &-list {
+      list-style-type: none;
+      &-heading {
+        color: #5f5b5b;
+        font: 600 18px/18px Novecentowide;
+        margin-bottom: 25px;
+      }
+      &-info {
+        color: #8f8f8f;
+        font: 400 16px/24px Helvetica Neue;
+      }
+      li {
+        width: 26%;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+/* Our-team section */
+.our-team {
+  &-section {
+    background-color: #efefef;
+    padding: 60px 0;
+  }
+  &-list {
+    list-style-type: none;
+    padding: 60px 0;
+    width: 100%;
+    li {
+      width: 265px;
+    }
+  }
+  &-content {
+    color: #8f8f8f;
+    font: 400 16px/24px Helvetica Neue;
+    padding-top: 20px;
+    border-top: 1px solid  #c2c2c2;
+  }
+}
+
+.worker {
+  &-name {
+    color: #5f5b5b;
+    font: 600 18px/24px Novecentowide;
+    margin: 20px 0 5px 0;
+  }
+  &-position {
+    color: #8f8f8f;
+    font: 400 16px/24px Helvetica Neue;
+    margin-bottom: 20px;
+  }
+}
