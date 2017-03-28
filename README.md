@@ -6,7 +6,7 @@ http://dev-deliver-ck.pantheonsite.io/
 ### Wordpress settings
 login: romchigan
 
-pass: 323534
+pass: admin
 
 ### MySQL database settings
 'DB_NAME', 'deliver'
